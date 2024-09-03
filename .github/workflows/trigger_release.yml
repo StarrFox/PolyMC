@@ -27,7 +27,7 @@ jobs:
           submodules: 'true'
           path: 'PolyMC-source'
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
       - name: Grab and store version
         run: |
           tag_name=$(echo ${{ github.ref }} | grep -oE "[^/]+$")
